@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getStudentByReg, getAllStudents } from "@/lib/data";
 import { GradeBadge } from "@/components/GradeBadge";
 import { SgpaComparisonChart } from "@/components/Charts/SgpaComparisonChart";
+import { SemesterCourseChart } from "@/components/Charts/SemesterCourseChart";
 import {
   Trophy,
   ArrowLeft,
@@ -254,7 +255,7 @@ export default async function StudentProfilePage({
             <div>
               <h2 className="text-base font-bold text-slate-900 flex items-center gap-2">
                 <BookOpen className="w-4 h-4 text-sust-forest" />
-                1st Semester Examination Results – 2025
+                1st Semester (1/1) Examination Results – 2025
               </h2>
               <p className="text-xs text-slate-500 mt-0.5">
                 Session: {student.session} • Held Nov 2025 • Result Published On: 03-Mar-2026
@@ -269,6 +270,17 @@ export default async function StudentProfilePage({
               </span>
             </div>
           </div>
+
+          {/* 1/1 Course Performance Bar Chart */}
+          {student.sem1Courses && student.sem1Courses.length > 0 && (
+            <div className="p-4 sm:p-6 border-b border-slate-100 bg-white">
+              <SemesterCourseChart
+                courses={student.sem1Courses}
+                semesterName="1st Semester (1/1)"
+                sgpa={student.sem1Gpa}
+              />
+            </div>
+          )}
 
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
@@ -337,7 +349,7 @@ export default async function StudentProfilePage({
             <div>
               <h2 className="text-base font-bold text-slate-900 flex items-center gap-2">
                 <BookOpen className="w-4 h-4 text-sust-forest" />
-                2nd Semester Examination Results – 2025
+                2nd Semester (1/2) Examination Results – 2025
               </h2>
               <p className="text-xs text-slate-500 mt-0.5">
                 Session: {student.session} • Held Apr 2026 • Printed On: 30-Jul-2026
@@ -352,6 +364,17 @@ export default async function StudentProfilePage({
               </span>
             </div>
           </div>
+
+          {/* 1/2 Course Performance Bar Chart */}
+          {student.sem2Courses && student.sem2Courses.length > 0 && (
+            <div className="p-4 sm:p-6 border-b border-slate-100 bg-white">
+              <SemesterCourseChart
+                courses={student.sem2Courses}
+                semesterName="2nd Semester (1/2)"
+                sgpa={student.sem2Gpa}
+              />
+            </div>
+          )}
 
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
