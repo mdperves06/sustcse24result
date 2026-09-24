@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
+import { useSearchParams, useRouter } from "next/navigation";
 import { Student } from "@/types";
 import { GradeBadge } from "@/components/GradeBadge";
 import {
@@ -14,6 +15,7 @@ import {
   Award,
   ChevronRight,
   Filter,
+  UserCheck,
 } from "lucide-react";
 
 interface RankingTableProps {
@@ -30,7 +32,24 @@ type SortField =
   | "totalCompletedCredits";
 
 export const RankingTable: React.FC<RankingTableProps> = ({ students }) => {
-  const [search, setSearch] = useState("");
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const urlQ = searchParams?.get("q") || "";
+  const [search, setSearch] = useState(urlQ);
+
+  useEffect(() => {
+    if (urlQ) {
+      setSearch(urlQ);
+      // If exact 10-digit regNo, redirect directly to student profile
+      if (/^\d{10}$/.test(urlQ.trim())) {
+        const match = students.find((s) => s.regNo === urlQ.trim());
+        if (match) {
+          router.push(`/student/${match.regNo}`);
+        }
+      }
+    }
+  }, [urlQ, students, router]);
+
   const [cgpaFilter, setCgpaFilter] = useState<"all" | "3.75" | "3.50" | "3.00">(
     "all"
   );
@@ -265,6 +284,25 @@ export const RankingTable: React.FC<RankingTableProps> = ({ students }) => {
         )}
       </div>
 
+      {/* Direct Single Match Alert */}
+      {filteredAndSorted.length === 1 && search && (
+        <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-3.5 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-xs">
+          <div className="flex items-center gap-2.5 text-xs text-emerald-950">
+            <UserCheck className="w-5 h-5 text-sust-forest flex-shrink-0" />
+            <span>
+              Student match: <strong>{filteredAndSorted[0].name}</strong> ({filteredAndSorted[0].regNo}) — Rank #{filteredAndSorted[0].rank}
+            </span>
+          </div>
+          <Link
+            href={`/student/${filteredAndSorted[0].regNo}`}
+            className="px-4 py-1.5 bg-sust-forest hover:bg-emerald-700 text-white rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all shadow-xs"
+          >
+            Open Student Profile
+            <ChevronRight className="w-3.5 h-3.5" />
+          </Link>
+        </div>
+      )}
+
       {/* Desktop Table View */}
       <div className="hidden md:block bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
         <div className="overflow-x-auto">
@@ -409,11 +447,6 @@ export const RankingTable: React.FC<RankingTableProps> = ({ students }) => {
                         <span className="text-base font-extrabold text-sust-forest">
                           {s.cgpa.toFixed(2)}
                         </span>
-                        {s.cgpa >= 3.75 && (
-                          <span className="text-[10px] bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded font-bold">
-                            Distinction
-                          </span>
-                        )}
                       </div>
                     </td>
                     <td className="py-3.5 px-4 text-xs font-medium text-slate-700">

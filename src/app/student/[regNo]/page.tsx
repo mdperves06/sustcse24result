@@ -90,12 +90,6 @@ export default async function StudentProfilePage({
               <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-600">
                 {student.gender}
               </span>
-              {student.cgpa >= 3.75 && (
-                <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-900 border border-amber-300">
-                  <Award className="w-3.5 h-3.5 text-amber-600" />
-                  Dean&apos;s Honor List
-                </span>
-              )}
             </div>
 
             <div>

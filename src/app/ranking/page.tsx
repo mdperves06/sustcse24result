@@ -67,7 +67,9 @@ export default function RankingPage() {
       </div>
 
       {/* The Ranking Table */}
-      <RankingTable students={students} />
+      <React.Suspense fallback={<div className="p-8 text-center text-slate-400">Loading ranking registry...</div>}>
+        <RankingTable students={students} />
+      </React.Suspense>
     </div>
   );
 }

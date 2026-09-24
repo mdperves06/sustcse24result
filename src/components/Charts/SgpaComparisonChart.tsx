@@ -82,7 +82,6 @@ export const SgpaComparisonChart: React.FC<SgpaComparisonChartProps> = ({
               return null;
             }}
           />
-          <ReferenceLine y={3.5} stroke="#94A3B8" strokeDasharray="3 3" label={{ value: "Dean's List (3.50)", fill: "#94A3B8", fontSize: 10, position: "top" }} />
           <Bar dataKey="gpa" radius={[6, 6, 0, 0]} maxBarSize={60}>
             {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={entry.fill} />

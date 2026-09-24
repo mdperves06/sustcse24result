@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getCohortStats, getAllStudents } from "@/lib/data";
 import { StatCard } from "@/components/StatCard";
+import { StudentSearch } from "@/components/StudentSearch";
 import { CgpaDistributionChart } from "@/components/Charts/CgpaDistributionChart";
 import {
   Users,
@@ -37,22 +38,22 @@ export default function HomePage() {
               Department of Computer Science & Engineering
             </div>
 
-            <div className="flex items-center justify-center gap-4">
-              <div className="relative w-16 h-20 flex-shrink-0">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-5 text-center sm:text-left">
+              <div className="relative w-16 h-20 sm:w-20 sm:h-24 flex-shrink-0">
                 <Image
                   src="/sust-logo.png"
                   alt="Shahjalal University of Science and Technology logo"
                   fill
-                  sizes="64px"
+                  sizes="80px"
                   className="object-contain drop-shadow"
                   priority
                 />
               </div>
-              <div className="text-left">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
+              <div>
+                <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
                   SUST CSE Academic Portal
                 </h1>
-                <p className="text-slate-300 text-sm sm:text-base font-medium mt-1">
+                <p className="text-slate-300 text-xs sm:text-base font-medium mt-1">
                   Shahjalal University of Science & Technology, Sylhet
                 </p>
               </div>
@@ -64,25 +65,7 @@ export default function HomePage() {
 
             {/* Quick Search Box */}
             <div className="w-full max-w-xl mt-4">
-              <form
-                action="/ranking"
-                method="GET"
-                className="relative flex items-center shadow-xl rounded-full overflow-hidden bg-white/10 backdrop-blur-md border border-white/20 p-1.5 focus-within:ring-2 focus-within:ring-emerald-400"
-              >
-                <Search className="w-5 h-5 text-slate-400 ml-4 pointer-events-none" />
-                <input
-                  type="text"
-                  name="q"
-                  placeholder="Enter Student Name or Registration Number (e.g. 2024331080)..."
-                  className="w-full bg-transparent px-4 py-2 text-sm text-white placeholder-slate-400 focus:outline-none"
-                />
-                <button
-                  type="submit"
-                  className="px-5 py-2.5 rounded-full bg-sust-forest hover:bg-emerald-600 text-white font-semibold text-xs transition-all shadow-md flex items-center gap-1.5"
-                >
-                  <span>Search</span>
-                </button>
-              </form>
+              <StudentSearch students={students} />
             </div>
 
             {/* CTA Buttons */}
@@ -162,17 +145,15 @@ export default function HomePage() {
             <StatCard
               title="CGPA ≥ 3.75"
               value={stats.countGe375}
-              subtitle={`${((stats.countGe375 / stats.totalStudents) * 100).toFixed(1)}% High Distinction`}
+              subtitle={`${((stats.countGe375 / stats.totalStudents) * 100).toFixed(1)}% of Cohort`}
               icon={Star}
-              badge="Dean's List"
               color="gold"
             />
             <StatCard
               title="CGPA ≥ 3.50"
               value={stats.countGe350}
-              subtitle={`${((stats.countGe350 / stats.totalStudents) * 100).toFixed(1)}% First Class`}
-              icon={Award}
-              badge="Honors"
+              subtitle={`${((stats.countGe350 / stats.totalStudents) * 100).toFixed(1)}% of Cohort`}
+              icon={Users}
               color="blue"
             />
           </div>
@@ -209,21 +190,21 @@ export default function HomePage() {
                   badge: "bg-amber-100 text-amber-900 border-amber-300",
                   icon: Trophy,
                   iconColor: "text-amber-500 fill-amber-400",
-                  title: "1st Place – Cohort Valedictorian",
+                  title: "1st Place",
                 },
                 {
                   border: "border-slate-300 bg-gradient-to-b from-slate-50/80 to-white",
                   badge: "bg-slate-200 text-slate-800 border-slate-300",
                   icon: Trophy,
                   iconColor: "text-slate-400 fill-slate-300",
-                  title: "2nd Place – High Distinction",
+                  title: "2nd Place",
                 },
                 {
                   border: "border-amber-600/40 bg-gradient-to-b from-amber-50/30 to-white",
                   badge: "bg-amber-100 text-amber-900 border-amber-300",
                   icon: Trophy,
                   iconColor: "text-amber-700 fill-amber-600",
-                  title: "3rd Place – High Distinction",
+                  title: "3rd Place",
                 },
               ];
               const s = rankStyles[idx];

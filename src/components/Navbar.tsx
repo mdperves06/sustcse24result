@@ -27,11 +27,27 @@ export const Navbar: React.FC = () => {
     { href: "/about", label: "Source & About", icon: Info },
   ];
 
-  const handleSearchSubmit = (e: React.FormEvent) => {
+  const handleSearchSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (navSearch.trim()) {
-      window.location.href = `/student/${encodeURIComponent(navSearch.trim())}`;
+    const q = navSearch.trim();
+    if (!q) return;
+
+    if (/^\d{10}$/.test(q)) {
+      window.location.href = `/student/${q}`;
+      return;
     }
+
+    try {
+      const res = await fetch(`/api/students?q=${encodeURIComponent(q)}`);
+      const data = await res.json();
+      if (data.students && data.students.length > 0) {
+        window.location.href = `/student/${data.students[0].regNo}`;
+        return;
+      }
+    } catch {
+      // Fallback to ranking
+    }
+    window.location.href = `/ranking?q=${encodeURIComponent(q)}`;
   };
 
   return (
