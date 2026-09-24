@@ -1,0 +1,559 @@
+{
+  "totalStudents": 99,
+  "totalMale": 90,
+  "totalFemale": 9,
+  "topCgpa": 3.99,
+  "minCgpa": 2.34,
+  "avgCgpa": 3.47,
+  "countGe375": 16,
+  "countGe350": 50,
+  "countGe300": 89,
+  "topStudents": [
+    {
+      "rank": 1,
+      "regNo": "2024331080",
+      "name": "MAMNUNA HASAN",
+      "session": "2024-2025",
+      "gender": "Female",
+      "cgpa": 3.99,
+      "sem1Gpa": 3.99,
+      "sem1Credit": 19.5,
+      "sem1Grade": "A",
+      "sem2Gpa": 4.0,
+      "sem2Credit": 19.5,
+      "sem2Grade": "A+",
+      "totalCompletedCredits": 39.0,
+      "sem1Courses": [
+        {
+          "courseId": "sem1_cse0541_1143",
+          "courseCode": "CSE 0541",
+          "identifier": "1143",
+          "title": "Structured Programming Language",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_cse0613_1133",
+          "courseCode": "CSE 0613",
+          "identifier": "1133",
+          "title": "Discrete Mathematics",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_cse0613_1134",
+          "courseCode": "CSE 0613",
+          "identifier": "1134",
+          "title": "Structured Programming Language Sessional",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_eee0713_1109d",
+          "courseCode": "EEE 0713",
+          "identifier": "1109D",
+          "title": "Electrical Circuit Analysis",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_eee0713_1110d",
+          "courseCode": "EEE 0713",
+          "identifier": "1110D",
+          "title": "Electrical Circuit Analysis Sessional",
+          "credit": 1.5,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_eng0231_1101d",
+          "courseCode": "ENG 0231",
+          "identifier": "1101D",
+          "title": "English Language Skills",
+          "credit": 2.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_eng0231_1102d",
+          "courseCode": "ENG 0231",
+          "identifier": "1102D",
+          "title": "English Language Skills Sessional",
+          "credit": 1.0,
+          "gradePoint": 3.75,
+          "letterGrade": "A"
+        },
+        {
+          "courseId": "sem1_mat0541_1101d",
+          "courseCode": "MAT 0541",
+          "identifier": "1101D",
+          "title": "Differential & Integral Calculus",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        }
+      ],
+      "sem2Courses": [
+        {
+          "courseId": "sem2_cse0610_1250",
+          "courseCode": "CSE 0610",
+          "identifier": "1250",
+          "title": "Software Development Project I",
+          "credit": 1.5,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_cse0613_1237",
+          "courseCode": "CSE 0613",
+          "identifier": "1237",
+          "title": "Data Structures",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_cse0613_1238",
+          "courseCode": "CSE 0613",
+          "identifier": "1238",
+          "title": "Data Structures Sessional",
+          "credit": 1.5,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_eee0714_1211d",
+          "courseCode": "EEE 0714",
+          "identifier": "1211D",
+          "title": "Electronic Devices & Circuits",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_eee0714_1212d",
+          "courseCode": "EEE 0714",
+          "identifier": "1212D",
+          "title": "Electronic Devices & Circuits Sessional",
+          "credit": 1.5,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_ipe0732_1206d",
+          "courseCode": "IPE 0732",
+          "identifier": "1206D",
+          "title": "Engineering Drawing & CAD",
+          "credit": 1.5,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_mat0541_1203d",
+          "courseCode": "MAT 0541",
+          "identifier": "1203D",
+          "title": "Coordinate Geometry & Ordinary Differential Equations",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_phy0533_1202d",
+          "courseCode": "PHY 0533",
+          "identifier": "1202D",
+          "title": "Physics Sessional",
+          "credit": 1.5,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_phy0533_1203d",
+          "courseCode": "PHY 0533",
+          "identifier": "1203D",
+          "title": "Electricity, Magnetism & Modern Physics",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "regNo": "2024331013",
+      "name": "HOSSAIN MOHAMMAD NAHDI",
+      "session": "2024-2025",
+      "gender": "Male",
+      "cgpa": 3.93,
+      "sem1Gpa": 3.92,
+      "sem1Credit": 19.5,
+      "sem1Grade": "A",
+      "sem2Gpa": 3.94,
+      "sem2Credit": 19.5,
+      "sem2Grade": "A",
+      "totalCompletedCredits": 39.0,
+      "sem1Courses": [
+        {
+          "courseId": "sem1_cse0541_1143",
+          "courseCode": "CSE 0541",
+          "identifier": "1143",
+          "title": "Structured Programming Language",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_cse0613_1133",
+          "courseCode": "CSE 0613",
+          "identifier": "1133",
+          "title": "Discrete Mathematics",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_cse0613_1134",
+          "courseCode": "CSE 0613",
+          "identifier": "1134",
+          "title": "Structured Programming Language Sessional",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_eee0713_1109d",
+          "courseCode": "EEE 0713",
+          "identifier": "1109D",
+          "title": "Electrical Circuit Analysis",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_eee0713_1110d",
+          "courseCode": "EEE 0713",
+          "identifier": "1110D",
+          "title": "Electrical Circuit Analysis Sessional",
+          "credit": 1.5,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_eng0231_1101d",
+          "courseCode": "ENG 0231",
+          "identifier": "1101D",
+          "title": "English Language Skills",
+          "credit": 2.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_eng0231_1102d",
+          "courseCode": "ENG 0231",
+          "identifier": "1102D",
+          "title": "English Language Skills Sessional",
+          "credit": 1.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_mat0541_1101d",
+          "courseCode": "MAT 0541",
+          "identifier": "1101D",
+          "title": "Differential & Integral Calculus",
+          "credit": 3.0,
+          "gradePoint": 3.5,
+          "letterGrade": "A-"
+        }
+      ],
+      "sem2Courses": [
+        {
+          "courseId": "sem2_cse0610_1250",
+          "courseCode": "CSE 0610",
+          "identifier": "1250",
+          "title": "Software Development Project I",
+          "credit": 1.5,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_cse0613_1237",
+          "courseCode": "CSE 0613",
+          "identifier": "1237",
+          "title": "Data Structures",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_cse0613_1238",
+          "courseCode": "CSE 0613",
+          "identifier": "1238",
+          "title": "Data Structures Sessional",
+          "credit": 1.5,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_eee0714_1211d",
+          "courseCode": "EEE 0714",
+          "identifier": "1211D",
+          "title": "Electronic Devices & Circuits",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_eee0714_1212d",
+          "courseCode": "EEE 0714",
+          "identifier": "1212D",
+          "title": "Electronic Devices & Circuits Sessional",
+          "credit": 1.5,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_ipe0732_1206d",
+          "courseCode": "IPE 0732",
+          "identifier": "1206D",
+          "title": "Engineering Drawing & CAD",
+          "credit": 1.5,
+          "gradePoint": 3.5,
+          "letterGrade": "A-"
+        },
+        {
+          "courseId": "sem2_mat0541_1203d",
+          "courseCode": "MAT 0541",
+          "identifier": "1203D",
+          "title": "Coordinate Geometry & Ordinary Differential Equations",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_phy0533_1202d",
+          "courseCode": "PHY 0533",
+          "identifier": "1202D",
+          "title": "Physics Sessional",
+          "credit": 1.5,
+          "gradePoint": 3.75,
+          "letterGrade": "A"
+        },
+        {
+          "courseId": "sem2_phy0533_1203d",
+          "courseCode": "PHY 0533",
+          "identifier": "1203D",
+          "title": "Electricity, Magnetism & Modern Physics",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "regNo": "2024331010",
+      "name": "KOUSHIK SADHAK JEET",
+      "session": "2024-2025",
+      "gender": "Male",
+      "cgpa": 3.93,
+      "sem1Gpa": 3.99,
+      "sem1Credit": 19.5,
+      "sem1Grade": "A",
+      "sem2Gpa": 3.87,
+      "sem2Credit": 19.5,
+      "sem2Grade": "A",
+      "totalCompletedCredits": 39.0,
+      "sem1Courses": [
+        {
+          "courseId": "sem1_cse0541_1143",
+          "courseCode": "CSE 0541",
+          "identifier": "1143",
+          "title": "Structured Programming Language",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_cse0613_1133",
+          "courseCode": "CSE 0613",
+          "identifier": "1133",
+          "title": "Discrete Mathematics",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_cse0613_1134",
+          "courseCode": "CSE 0613",
+          "identifier": "1134",
+          "title": "Structured Programming Language Sessional",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_eee0713_1109d",
+          "courseCode": "EEE 0713",
+          "identifier": "1109D",
+          "title": "Electrical Circuit Analysis",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_eee0713_1110d",
+          "courseCode": "EEE 0713",
+          "identifier": "1110D",
+          "title": "Electrical Circuit Analysis Sessional",
+          "credit": 1.5,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_eng0231_1101d",
+          "courseCode": "ENG 0231",
+          "identifier": "1101D",
+          "title": "English Language Skills",
+          "credit": 2.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem1_eng0231_1102d",
+          "courseCode": "ENG 0231",
+          "identifier": "1102D",
+          "title": "English Language Skills Sessional",
+          "credit": 1.0,
+          "gradePoint": 3.75,
+          "letterGrade": "A"
+        },
+        {
+          "courseId": "sem1_mat0541_1101d",
+          "courseCode": "MAT 0541",
+          "identifier": "1101D",
+          "title": "Differential & Integral Calculus",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        }
+      ],
+      "sem2Courses": [
+        {
+          "courseId": "sem2_cse0610_1250",
+          "courseCode": "CSE 0610",
+          "identifier": "1250",
+          "title": "Software Development Project I",
+          "credit": 1.5,
+          "gradePoint": 3.75,
+          "letterGrade": "A"
+        },
+        {
+          "courseId": "sem2_cse0613_1237",
+          "courseCode": "CSE 0613",
+          "identifier": "1237",
+          "title": "Data Structures",
+          "credit": 3.0,
+          "gradePoint": 3.75,
+          "letterGrade": "A"
+        },
+        {
+          "courseId": "sem2_cse0613_1238",
+          "courseCode": "CSE 0613",
+          "identifier": "1238",
+          "title": "Data Structures Sessional",
+          "credit": 1.5,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_eee0714_1211d",
+          "courseCode": "EEE 0714",
+          "identifier": "1211D",
+          "title": "Electronic Devices & Circuits",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_eee0714_1212d",
+          "courseCode": "EEE 0714",
+          "identifier": "1212D",
+          "title": "Electronic Devices & Circuits Sessional",
+          "credit": 1.5,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_ipe0732_1206d",
+          "courseCode": "IPE 0732",
+          "identifier": "1206D",
+          "title": "Engineering Drawing & CAD",
+          "credit": 1.5,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_mat0541_1203d",
+          "courseCode": "MAT 0541",
+          "identifier": "1203D",
+          "title": "Coordinate Geometry & Ordinary Differential Equations",
+          "credit": 3.0,
+          "gradePoint": 3.5,
+          "letterGrade": "A-"
+        },
+        {
+          "courseId": "sem2_phy0533_1202d",
+          "courseCode": "PHY 0533",
+          "identifier": "1202D",
+          "title": "Physics Sessional",
+          "credit": 1.5,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        },
+        {
+          "courseId": "sem2_phy0533_1203d",
+          "courseCode": "PHY 0533",
+          "identifier": "1203D",
+          "title": "Electricity, Magnetism & Modern Physics",
+          "credit": 3.0,
+          "gradePoint": 4.0,
+          "letterGrade": "A+"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "department": "Department of Computer Science & Engineering",
+    "university": "Shahjalal University of Science & Technology, Sylhet, Bangladesh",
+    "sem1": {
+      "exam": "B.Sc. (Engg.) 1st Semester Examination - 2025 (January-June)",
+      "heldIn": "Nov 2025",
+      "publishedOn": "03-Mar-2026",
+      "chairman": "Dr. Husne Ara Chowdhury",
+      "controller": "Md. Mahbub Hossain",
+      "tabulators": [
+        "Md. Eamin Rahman",
+        "Mr Md Shadmim Hasan Sifat",
+        "Mr. Abdullah Al Thaki",
+        "Mr. Md. Shymon Islam"
+      ]
+    },
+    "sem2": {
+      "exam": "B.Sc. (Engg.) 2nd Semester Examination - 2025 (July-December)",
+      "heldIn": "Apr 2026",
+      "printedOn": "30-Jul-2026",
+      "chairman": "Dr. Husne Ara Chowdhury",
+      "controller": "Md. Mahbub Hossain",
+      "tabulators": [
+        "Md. Eamin Rahman",
+        "Mr. Abdullah Al Thaki",
+        "Mr Md Shadmim Hasan Sifat",
+        "Mr. Md. Fahimul Islam"
+      ]
+    }
+  }
+}

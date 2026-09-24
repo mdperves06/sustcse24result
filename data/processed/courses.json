@@ -1,0 +1,138 @@
+[
+  {
+    "id": "sem1_cse0541_1143",
+    "code": "CSE 0541",
+    "identifier": "1143",
+    "title": "Structured Programming Language",
+    "credits": 3.0,
+    "semester": 1
+  },
+  {
+    "id": "sem1_cse0613_1133",
+    "code": "CSE 0613",
+    "identifier": "1133",
+    "title": "Discrete Mathematics",
+    "credits": 3.0,
+    "semester": 1
+  },
+  {
+    "id": "sem1_cse0613_1134",
+    "code": "CSE 0613",
+    "identifier": "1134",
+    "title": "Structured Programming Language Sessional",
+    "credits": 3.0,
+    "semester": 1
+  },
+  {
+    "id": "sem1_eee0713_1109d",
+    "code": "EEE 0713",
+    "identifier": "1109D",
+    "title": "Electrical Circuit Analysis",
+    "credits": 3.0,
+    "semester": 1
+  },
+  {
+    "id": "sem1_eee0713_1110d",
+    "code": "EEE 0713",
+    "identifier": "1110D",
+    "title": "Electrical Circuit Analysis Sessional",
+    "credits": 1.5,
+    "semester": 1
+  },
+  {
+    "id": "sem1_eng0231_1101d",
+    "code": "ENG 0231",
+    "identifier": "1101D",
+    "title": "English Language Skills",
+    "credits": 2.0,
+    "semester": 1
+  },
+  {
+    "id": "sem1_eng0231_1102d",
+    "code": "ENG 0231",
+    "identifier": "1102D",
+    "title": "English Language Skills Sessional",
+    "credits": 1.0,
+    "semester": 1
+  },
+  {
+    "id": "sem1_mat0541_1101d",
+    "code": "MAT 0541",
+    "identifier": "1101D",
+    "title": "Differential & Integral Calculus",
+    "credits": 3.0,
+    "semester": 1
+  },
+  {
+    "id": "sem2_cse0610_1250",
+    "code": "CSE 0610",
+    "identifier": "1250",
+    "title": "Software Development Project I",
+    "credits": 1.5,
+    "semester": 2
+  },
+  {
+    "id": "sem2_cse0613_1237",
+    "code": "CSE 0613",
+    "identifier": "1237",
+    "title": "Data Structures",
+    "credits": 3.0,
+    "semester": 2
+  },
+  {
+    "id": "sem2_cse0613_1238",
+    "code": "CSE 0613",
+    "identifier": "1238",
+    "title": "Data Structures Sessional",
+    "credits": 1.5,
+    "semester": 2
+  },
+  {
+    "id": "sem2_eee0714_1211d",
+    "code": "EEE 0714",
+    "identifier": "1211D",
+    "title": "Electronic Devices & Circuits",
+    "credits": 3.0,
+    "semester": 2
+  },
+  {
+    "id": "sem2_eee0714_1212d",
+    "code": "EEE 0714",
+    "identifier": "1212D",
+    "title": "Electronic Devices & Circuits Sessional",
+    "credits": 1.5,
+    "semester": 2
+  },
+  {
+    "id": "sem2_ipe0732_1206d",
+    "code": "IPE 0732",
+    "identifier": "1206D",
+    "title": "Engineering Drawing & CAD",
+    "credits": 1.5,
+    "semester": 2
+  },
+  {
+    "id": "sem2_mat0541_1203d",
+    "code": "MAT 0541",
+    "identifier": "1203D",
+    "title": "Coordinate Geometry & Ordinary Differential Equations",
+    "credits": 3.0,
+    "semester": 2
+  },
+  {
+    "id": "sem2_phy0533_1202d",
+    "code": "PHY 0533",
+    "identifier": "1202D",
+    "title": "Physics Sessional",
+    "credits": 1.5,
+    "semester": 2
+  },
+  {
+    "id": "sem2_phy0533_1203d",
+    "code": "PHY 0533",
+    "identifier": "1203D",
+    "title": "Electricity, Magnetism & Modern Physics",
+    "credits": 3.0,
+    "semester": 2
+  }
+]

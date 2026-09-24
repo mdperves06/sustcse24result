@@ -1,0 +1,53 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Student {
+  regNo                 String         @id
+  name                  String
+  session               String
+  gender                String
+  rank                  Int
+  cgpa                  Float
+  sem1Gpa               Float?
+  sem1Credit            Float?
+  sem1Grade             String?
+  sem2Gpa               Float?
+  sem2Credit            Float?
+  sem2Grade             String?
+  totalCompletedCredits Float
+  createdAt             DateTime       @default(now())
+  updatedAt             DateTime       @updatedAt
+  courseResults         CourseResult[]
+}
+
+model Course {
+  id         String         @id
+  code       String
+  identifier String
+  title      String
+  credits    Float
+  semester   Int
+  results    CourseResult[]
+}
+
+model CourseResult {
+  id           String   @id @default(cuid())
+  studentRegNo String
+  courseId     String
+  semester     Int
+  gradePoint   Float
+  letterGrade  String
+  createdAt    DateTime @default(now())
+
+  student Student @relation(fields: [studentRegNo], references: [regNo], onDelete: Cascade)
+  course  Course  @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  @@index([studentRegNo])
+  @@index([courseId])
+}
